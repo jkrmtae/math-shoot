@@ -1,0 +1,84 @@
+.team {
+    width: auto;
+    max-width: 350px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 3px #22222222;
+    transition: all ease-in-out 0.2s;
+    border: none;
+
+    &:hover, &.selected {
+        box-shadow: 0 0 5px 5px rgb(32 32 32 / 50%);
+        transform: scale(1.05);
+    }
+
+    .top-part {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 50%;
+
+        .team-name {
+            width: 100%;
+            margin-block: auto;
+        }
+    }
+
+    &.died {
+        background: #f2aaaa;
+        pointer-events: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+
+
+    .bottom-part {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        .team-id {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin-inline: 10px 20px;
+            flex-shrink: 0;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+
+            .stat-item {
+                display: flex;
+                width: 100%;
+                gap: 15px;
+
+                .label {
+                    margin-right: auto;
+                    font-size: 20px;
+                }
+
+                .value {
+                    width: 50px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

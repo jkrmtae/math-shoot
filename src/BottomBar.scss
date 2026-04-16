@@ -1,0 +1,85 @@
+.bottom-bar-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  padding-block: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+  overflow: hidden;
+
+  .bottom-bar {
+    background: white;
+    height: 70px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.2s ease-in-out;
+
+    .team-name-inp {
+      height: 50px;
+      width: 400px;
+      border: solid 1px #222;
+      border-radius: 25px;
+      padding-inline: 10px;
+    }
+    .add-team {
+      padding: 0;
+      margin-left: 20px;
+      color: white;
+      font-size: 30px;
+    }
+    .shot-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .ans-text {
+        color: #222;
+      }
+
+      .btn {
+        width: 50px;
+
+        &.true-ans {
+          background-color: #51c351;
+        }
+
+        img {
+          transform: rotate(0deg);
+          filter: invert(1);
+          width: 25px;
+          margin-top: -2px;
+          margin-left: -2px;
+        }
+      }
+
+      .shot-inp {
+        height: 50px;
+        width: 50px;
+        border: solid 1px #222;
+        border-radius: 10px;
+        text-align: center;
+      }
+    }
+  }
+  .bottom-btn {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity ease-in-out 0.2s;
+    img.target-icon {
+      transform: rotate(180deg);
+    }
+    &.disabled {
+      cursor: default;
+      filter: saturate(0.5);
+    }
+  }
+}
