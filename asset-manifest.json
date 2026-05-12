@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/math-fest-game/static/css/main.23dbee31.css",
+    "main.js": "/math-fest-game/static/js/main.ab876f92.js",
+    "static/js/453.9514019a.chunk.js": "/math-fest-game/static/js/453.9514019a.chunk.js",
+    "static/media/logo.png": "/math-fest-game/static/media/logo.05bbfa168b7d380f5d0c.png",
+    "index.html": "/math-fest-game/index.html",
+    "static/media/arrow.svg": "/math-fest-game/static/media/arrow.64a024e09834a703885277c6ac6a84c9.svg",
+    "static/media/target.svg": "/math-fest-game/static/media/target.adf7f987d3fde004fcc3a56ccfe0c6cd.svg",
+    "static/media/checkIcon.svg": "/math-fest-game/static/media/checkIcon.d97b21af918e25aa79f42c18c3425ab2.svg",
+    "main.23dbee31.css.map": "/math-fest-game/static/css/main.23dbee31.css.map",
+    "main.ab876f92.js.map": "/math-fest-game/static/js/main.ab876f92.js.map",
+    "453.9514019a.chunk.js.map": "/math-fest-game/static/js/453.9514019a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23dbee31.css",
+    "static/js/main.ab876f92.js"
+  ]
+}
