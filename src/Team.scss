@@ -1,0 +1,78 @@
+.team {
+
+    &.died {
+        background: #f2aaaa;
+        pointer-events: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    .bottom-part {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+
+        .team-id {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            margin-inline: 5px 15px;
+            flex-shrink: 0;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+
+            .stat-item {
+                display: flex;
+                width: 100%;
+                gap: 10px;
+
+                .label {
+                    margin-right: auto;
+                    font-size: 18px;
+                }
+
+                .value {
+                    width: 50px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        max-width: 100%;
+        min-height: auto;
+        padding: 12px;
+
+        .top-part {
+            .team-name {
+                font-size: 18px;
+            }
+        }
+
+        .bottom-part {
+            .stats {
+                .stat-item {
+                    .label,
+                    .value {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

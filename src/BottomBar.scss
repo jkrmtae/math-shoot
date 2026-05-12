@@ -1,0 +1,57 @@
+.bottom-bar-container {
+
+      .ans-text {
+        color: #222;
+      }
+
+      .btn {
+        width: 50px;
+
+        &.true-ans {
+          background-color: #51c351;
+        }
+
+        img {
+          transform: rotate(0deg);
+          filter: invert(1);
+          width: 25px;
+          margin-top: -2px;
+          margin-left: -2px;
+        }
+      }
+    }
+  }
+
+  .bottom-btn {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img.target-icon {
+      transform: rotate(180deg);
+    }
+
+    &.disabled {
+      cursor: default;
+      filter: saturate(0.5);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-bar-container {
+    padding: 10px;
+
+    .bottom-bar {
+      border-radius: 25px;
+      padding: 10px;
+    }
+
+    .bottom-btn {
+      width: 45px;
+      height: 45px;
+      margin-left: 8px;
+    }
+  }
+}

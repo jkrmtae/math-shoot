@@ -1,0 +1,20 @@
+.rules-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    .rules-item {
+        color: #222;
+        height: 70%;
+        width: 25%;
+        border: 2px solid #888;
+        border-radius: 15px;
+    }
+}
+
+.rules-heading {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 60px;
+}

@@ -1,0 +1,58 @@
+#game {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85));
+
+    .inner {
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        gap: 15px;
+        padding: 30px 20px 180px;
+        color: #222;
+        box-sizing: border-box;
+    }
+
+    &.team-selected {
+        .inner {
+            .team:not(.selected) {
+                background-color: rgb(181 181 181);
+                filter: grayscale(0.8);
+
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+
+        .bottom-bar-container .bottom-btn {
+            opacity: 0;
+        }
+    }
+
+    &.ready-to-shoot {
+        .inner {
+            .team:not(.selected) {
+                background-color: rgb(181 181 181);
+                filter: grayscale(0.8);
+
+                &:hover {
+                    box-shadow: 0 0 5px 5px rgb(207 46 46 / 57%);
+                    transform: scale(1.03);
+                    filter: none;
+                    background: #ffeded;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #game {
+        .inner {
+            padding: 20px 10px 220px;
+            gap: 10px;
+        }
+    }
+}
